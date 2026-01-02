@@ -1,7 +1,3 @@
-Including folder files
-01-Basic html first code
-
-
 tells browser you are using HTML5
 root element
 head jo display na krani hon
@@ -14,22 +10,27 @@ lang="en"
 left side pr naam or roght side pr value likhte  he
 single quotes or double quotes dono me likkh skte hen\
 
+
 ctrl slash /
 
 headings importent keliye hoti hen bada dikhane keliye nhi
 to bada krne keliye font size use kren
 
+
 anchor tags
 add links in page
 
+
 dosron ke links absolute link kehlata he
 or pani website ke links relative links jo slash/ k sath lag jate he
+
 
 image tag me hight or width me ek time pe sirf ek atrtribute ko cheden nahi to aspect ratio khrab ho jata he
 
 html k attributes ki jagah css ki trf jana chahiye
 
 spaces count krnae keliye pre tag hota he
+
 
 page layout techniques:
 using sementic or non sementic tags
@@ -39,11 +40,15 @@ sementic, header, footer,
 non sementic
 div span etc
 
+
 using the rght tags
 
 header
 main
 footer
+
+
+
 
 -=-=-=-=-=-=-=-=-
 inside main tags
@@ -51,6 +56,7 @@ section tag
 article tag
 aside tag_ for content aside main contents ads
 -
+
 Div tag 
 non sementic tag he 
 div is a container used for other HTML elements
@@ -93,9 +99,13 @@ video
 
 te sare tags pori width lete hen html me....
 
+
+
 Span Tag
 sapan is also a container used for other html elements
 Inline elemetns takes width as per size
+
+
 
 Inline elements: jo utni jagha hi gherte hen,
 a
@@ -132,12 +142,20 @@ sup
 textarea
 time
 
+
+
+
+
+
+
 ol; order list, jisme pcko bta diya jay
 ul; unorder list
 
 li
 ol
 ul
+
+
 
 tables in html
 tr; display table row
@@ -146,7 +164,10 @@ th; display table header
 ,
 colspan for mergign cells
 
+
+
 label id name pr bhi touch krwa deta he
+
 
 video tag src link
 me attributes
@@ -155,3 +176,6 @@ height
 width
 loop
 autoplay
+
+
+
