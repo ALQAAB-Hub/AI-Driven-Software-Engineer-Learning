@@ -1,0 +1,54 @@
+emmet ?
+
+
+selector h1
+color property
+red value
+
+h1 {
+    color: red;
+}
+
+
+
+color property
+foreground
+color: red;
+
+
+RGB
+color: rgb(255,0,0);
+
+
+
+google color picker
+
+id #
+class .
+element selector p   or h1 etc
+universal selector *
+
+
+
+absolute unit or relative units in css
+size ko mayer rne keliye css me kiy triq hote hen 
+inch me
+cm
+mm
+
+96px = 1 inch = 2.54 cm
+
+
+box model in css
+
+
+
+border short hand
+border: 2px solid black;
+        width, style, color
+
+    
+border-radius: ;
+isme hight or width same hone pr circle bn jata he
+
+

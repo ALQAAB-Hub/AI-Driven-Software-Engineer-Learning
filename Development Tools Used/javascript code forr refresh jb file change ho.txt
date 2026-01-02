@@ -1,0 +1,15 @@
+<script>
+  async function autoReload() {
+    let lastModified = null;
+    setInterval(async () => {
+      const res = await fetch(window.location.href, { method: 'HEAD' });
+      const newModified = res.headers.get("last-modified");
+
+      if (lastModified && newModified !== lastModified) {
+        location.reload(); // file badli -> reload
+      }
+      lastModified = newModified;
+    }, 1000); // har 1 second check kare
+  }
+  autoReload();
+</script>

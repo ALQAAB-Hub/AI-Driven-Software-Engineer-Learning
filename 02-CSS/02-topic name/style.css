@@ -1,0 +1,214 @@
+/* Section 1: Basic div and heading */
+#div {
+    height: 200px;
+    width: 400px;
+    text-align: right;
+    background-color: pink;
+    border: 2px solid green;
+    color: #333;
+    padding: 10px;
+}
+
+h1 {
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    text-align: center;
+    border: 2px solid black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Section 2: Three divs */
+div:not([id]):not([class]) {
+    width: 200px;
+    height: 200px;
+    background-color: #ffcccb;
+    border: 2px solid #333;
+    border-radius: 50%;
+    padding: 25px;
+    margin: 10px 0;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Section 3: Amazon-like navbar */
+#circle-div {
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+#navbar {
+    height: 60px;
+    background-color: #2c3e50;
+    border: 5px solid #f1c40f;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+#navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+}
+
+#navbar #logo {
+    color: #f1c40f;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#search-box {
+    color: #2c3e50;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+}
+
+#search-btn {
+    color: white;
+    background-color: #e67e22;
+    border: none;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+
+/* Section 4: Display property practice */
+#display-div {
+    background-color: #ffcccb;
+    width: 150px;
+    height: 150px;
+    padding: 20px;
+    margin: 20px;
+    display: inline-block;
+    border: 2px solid #333;
+    color: #333;
+    text-align: center;
+}
+
+#display-btn {
+    display: block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Section 5: Visibility practice */
+#visibility-heading {
+    margin-top: 30px;
+    color: #2c3e50;
+}
+
+#visibility-div {
+    background-color: #ffcccb;
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+    margin: 20px;
+    border: 2px solid #333;
+    color: #333;
+    /* visibility: hidden; */ /* Uncomment to hide */
+}
+
+/* Section 6: Opacity practice */
+#opacity-p {
+    background-color: rgba(0, 0, 255, 0.5);
+    padding: 20px;
+    color: white;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+/* Section 7: Complete layout */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#header-nav {
+    height: 60px;
+    background-color: #2c3e50;
+    border-bottom: 5px solid #f1c40f;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+#header-nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+}
+
+#header-nav #header-logo {
+    color: #f1c40f;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#header-search-box {
+    color: #2c3e50;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+}
+
+#header-search-btn {
+    color: white;
+    background-color: #e67e22;
+    border: none;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+
+.color-box {
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    display: inline-block;
+    margin: 10px;
+}
+
+#box1 {
+    background-color: rgba(0, 0, 255, 0.7);
+}
+
+#box2 {
+    background-color: rgba(0, 255, 0, 0.7);
+}
+
+#box3 {
+    background-color: rgba(255, 0, 0, 0.7);
+}
+
+#content {
+    height: 700px;
+    text-align: center;
+    padding: 50px;
+    background-color: #f8f9fa;
+}
+
+footer {
+    text-align: center;
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+}
