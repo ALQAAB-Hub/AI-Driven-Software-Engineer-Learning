@@ -52,3 +52,20 @@ border-radius: ;
 isme hight or width same hone pr circle bn jata he
 
 
+position: static;
+    /* top,right,left,bottom ye statci me kam nai krti */
+
+
+    
+Flex Box Model
+
+kis bhi container ko flexbox bnane keliye us container ko display property set krdiya
+display flex
+to wo container flexbox bn jayga!
+
+
+
+align-self: flex-end;
+is property ko zyadah pririoty di jaygi chahe container me jo bhi set kiya ho
+
+

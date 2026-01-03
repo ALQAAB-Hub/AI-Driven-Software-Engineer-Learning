@@ -1,0 +1,18 @@
+#div-parent {
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    font-size: 10px;
+}
+
+#div-child {
+    /* height: 50px; */
+    width: 33%;
+    background-color: yellow;
+    margin-left: 10%;   
+    font-size: 2em;
+    /* width: 5em; */
+    /* width: 5rem; */
+    height: 50vh;
+
+}
