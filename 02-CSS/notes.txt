@@ -69,3 +69,4 @@ align-self: flex-end;
 is property ko zyadah pririoty di jaygi chahe container me jo bhi set kiya ho
 
 
+active yani click krne pr jo changes hongi

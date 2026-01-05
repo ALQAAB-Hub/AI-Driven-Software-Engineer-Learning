@@ -1,0 +1,66 @@
+div {
+    height: 100px;
+    width: 100px;
+    background-color: aquamarine;
+    border: 2px solid black;
+    margin-top: 100px;
+    margin-left: 100px;
+    animation: color 2s ease-in-out 0s infinite normal; ;
+    /* transition-property: all;
+    transition-duration: 2s;
+    transition-timing-function: steps(3);
+    transition-delay: 1s; */
+    /* transition: all 2s steps(3) 1s; */
+    /* rotate: x 180deg; */
+    
+    /* horizontal keliye */
+    /* transform: scale(2, 1); */
+    /* verticle keliye | | | */
+    /* transform: scale(1, 2); */
+    /* transition: all 2s ease-in; */
+
+    /* animation-name: color;
+    animation-duration: 2s; */
+
+    /* animation-timing-function: ease-in; */
+
+    /* animation-timing-function: infinite;
+    animation-delay: 0s;
+    animation-iteration-count: infinite; */
+    
+    /* animation-iteration-count: 5; */
+    /* animation-direction: alternate; */
+
+}
+
+/* @keyframes color {
+    from {background-color: aquamarine;}
+    to {background-color: rgb(6, 16, 107);}
+} */
+ 
+@keyframes color {
+    from { left: 0px; }
+    to { left: 400px; }
+}
+
+/* 150 */
+
+
+
+
+div:hover {
+    background-color: red;
+    color: wheat;
+    font-size: 20px;
+    /* transform: scalex(2); */
+    /* transform: rotate(145deg); */
+    /* transform: translate(100px); */
+    /* transform: translate(100px, 80px); */
+    /* transform: skew(45deg); */
+}
+
+
+
+/* x horizontal or y vertical */
+
+/* 2d or 3d or x y z  */
