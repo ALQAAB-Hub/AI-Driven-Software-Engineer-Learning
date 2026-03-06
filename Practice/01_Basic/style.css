@@ -1,4 +1,6 @@
-.nav {
+nav a {
     height: 50px;
-    background-color: black;
+    background-color: navy;
+    color: white;
+
 }
