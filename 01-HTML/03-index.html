@@ -42,7 +42,41 @@
         <input type="file" id="upload"><br><br>
         
         <!-- Radio -->
-         <input type="radio" name="gender" value="">
+         <span>Gender:</span><br>
+         <input type="radio" id="male" name="gender" value="male">
+         <label for="male">Male</label><br>
+
+         <input type="radio" id="female" name="gender" value="female">
+         <label for="female">Female</label><br>
+
+         <input type="radio" id="other" name="gender" value="other">
+         <label for="other">Other</label>
+         <br><br>
+
+         <!-- Skills -->
+         <span>Skills:</span><br>
+         <input type="checkbox" id="html" name="skills" value="html">
+         <label for="html">HTML</label><br>
+
+         <input type="checkbox" id="css" name="skills" value="css">
+         <label for="css">CSS</label><br>
+
+         <input type="checkbox" id="javascript" name="skills" value="javascript">
+         <label for="javascript">JavaScript</label><br>
+
+         <label for="country">Country:</label>
+            <select name="country" id="country">
+                    <optgroup label="Main Country">
+                        <option value="pk">Pakistan</option>
+                        <option value="us">Unites States</option>
+                        <option value="iran">Iran</option>
+                        <!-- sub -->
+                        <optgroup label="Other Countrys"></optgroup>
+                        <option value="sa">Saudi Arabia</option>
+                        <option value="falasteen">Falasteen</option>
+                        <option value="uk">United Kingdom</option>
+                    </optgroup>
+            </select>
     </form>
 
 </body>
