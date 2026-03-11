@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>004 Practice</title>
-    <a href="script.js"></a>
+    <script src="./JS/script.js"></script>    
     <!-- <base href="/assets/"> -->
 
     <!-- SEO meta tags -->
@@ -47,7 +47,7 @@
             <source media="(min-width: 1144px)" srcset="./Assets/large-image.jpg">
             <source media="(min-width: 768px)" srcset="./Assets/medium-image.jpg">
             <source media="(min-width: 300px)" srcset="./Assets/small-image.jpg">
-            <img src="./Assets/nature.png" alt="nature img">
+            <img src="./Assets/nature.png" alt="nature img" width="600">
         </picture> <br>
 
     <h2>2. Inline SVG (Graphics without CSS/JS)</h2>
@@ -129,10 +129,12 @@
             <p>Copyright: &copy; | Trademark: &trade; | Registered: &reg; | Euro: &euro; | Pound: &pound; | Yen: &yen; | Heart: &hearts; | Less than: &lt; | Greater than: &gt; | Ampersand: &amp;</p> <hr> 
 
         <h2>19. Embed Tag</h2>
-        <embed src="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" type="application/pdf">
+        <embed src="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" type="application/pdf" width="500" height="300">
 
         <h2>20. Object Tag (with fallback)</h2>
-        <span>PDF support nahi hai.</span> <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" target="_blank">Yahan click karein.</a>
+            <object data="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" type="application/pdf" width="400" height="300">
+                <p>PDF support nahi hai. <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" target="_blank">Yahan click karein.</a></p>
+            </object>
 
         <footer>
             <p>© 2026 Practice 4 - Pure HTML Mastery. All rights reserved.</p>
