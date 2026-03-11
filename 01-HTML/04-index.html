@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>004 Practice</title>
+    <a href="script.js"></a>
+    <!-- <base href="/assets/"> -->
+
+    <!-- SEO meta tags -->
+    <meta name="description" content="Free HTML tutorials in Urdu. Learn web development easily.">
+    <meta name="keywords" content="HTML, Urdu tutorial, web development, coding">
+    <meta name="author" content="CodeWithAhmed">
+    
+    <!-- Social media ke liye (Open Graph) -->
+    <meta property="og:title" content="HTML Urdu Tutorials">
+    <meta property="og:description" content="Free web development course">
+    <meta property="og:image" content="https://site.com/image.jpg">
+    
+    <!-- Twitter ke liye -->
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <!-- Robot control -->
+    <meta name="robots" content="index, follow">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./CSS/style.css">
+    
+    <!-- Favicons - sab devices ke liye -->
+    <link rel="icon" href="#" sizes="any">
+    <link rel="icon" href="#" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="#">
+    
+    <!-- Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    
+    <!-- SEO -->
+    <link rel="canonical" href="https://site.com/page">
+</head>
+
+<body>
+    <h1>📘 Practice 4: Advanced Pure HTML</h1>
+        <p>Is practice mein aap kuch naye HTML tags aur attributes seekhenge jo pehle practice mein nahi aaye.</p><hr>
+
+    <h2>1. Picture Element (Responsive Images)</h2>
+        <picture>
+            <source media="(min-width: 1144px)" srcset="./Assets/large-image.jpg">
+            <source media="(min-width: 768px)" srcset="./Assets/medium-image.jpg">
+            <source media="(min-width: 300px)" srcset="./Assets/small-image.jpg">
+            <img src="./Assets/nature.png" alt="nature img">
+        </picture> <br>
+
+    <h2>2. Inline SVG (Graphics without CSS/JS)</h2>
+        <svg width="200" height="200">
+                    <circle cx="100" cy="100" r="50" stroke="black" stroke-width="3" fill="lightblue"></circle>
+                    <rect x="50" y="50" width="100" height="100" stroke="red" stroke-width="2" fill="yellow" opacity="0.5"></rect>
+                    <line x1="0" y1="0" x2="200" y2="200" stroke="green" stroke-width="4"></line>
+                    <text x="20" y="180" fill="purple">SVG Text</text>
+        </svg><hr>
+
+    <h2>3. Definition List (dl, dt, dd)</h2>
+        <dl>
+            <dt>HTML</dt>
+            <dd>HyperText Markup Language – website ka skeleton.</dd>
+
+            <dt>CSS</dt>
+            <dd>Cascading Style Sheets – website ki styling.</dd>
+
+            <dt>JS</dt>
+            <dd>JavaScript – website ki functionality.</dd>
+        </dl>
+        
+    <h2>4. BDO (Bi-Directional Override)</h2>
+        <p>Normal Text یہ اردو ہے۔</p>
+        <p><bdo dir="rtl">Normal text</bdo> ulat <bdo dir="ltr">یہ اردو ہے۔</bdo></p>
+        <p><bdo dir="rtl">یہ اردو ہے</bdo></p>
+
+    <h2>5. KBD (Keyboard Input Tag)</h2>
+        <p>Copy karne ke liye dabayein: <kbd>Ctrl</kbd> + <kbd>C</kbd></p>
+        <p>Save karne ke liye: <kbd>Ctrl</kbd> + <kbd>S</kbd></p>
+    
+    <h2>6. SAMP (Sample Output)</h2>
+        <p>Computer ka response: <samp>Error 404: File not found</samp></p>
+
+        <!-- Basic equation: x² + y² = z² -->
+        <p>Quadratic formula: 
+        <var>x</var> = (-<var>b</var> ± √(<var>b</var>² - 4<var>ac</var>)) / 2<var>a</var>
+        </p>
+        <p>This is explained later<sup>[1]</sup></p>
+
+        <p>
+            <dfn><abbr title="Cascading Style Sheets">CSS</abbr></dfn> 
+            website ko design karne ke liye use hoti hai.
+        </p>
+
+        <p>
+             SuperCali<wbr>Fragilistic<wbr>Expiali<wbr>Docious
+        </p>
+
+        <p contenteditable="true">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus veniam incidunt beatae fuga rerum expedita maiores aspernatur odio molestias eos! Necessitatibus architecto repudiandae dolorem eius possimus facere ea natus esse.</p>
+        <p contenteditable="false" spellcheck="false">Yahan koi spelling check nahi hoga</p>
+        <p spellcheck="true">Yahaaasdqn koi spelling check nahi hoga</p>
+        <p spellcheck="true">Teh quik brown fox</p> <hr>
+
+        <p dir="ltr">Urdu likhne ke liye RTL use karo</p>
+        <p dir="rtl">یہ اردو میں لکھا ہوا ہے۔</p>
+        <p dir="auto">123 abc یہ اردو ہے</p> <hr>
+
+        <!-- Navigation with accesskeys -->
+        <nav>
+        <a href="04-index.html" accesskey="h">Home (Alt+H)</a>
+        <a href="./04-Contact.html" accesskey="c">Contact (Alt+C)</a><br><br>
+        </nav>
+
+        <!-- Tab button dabao to ek ek karke select hote jayenge -->
+        <label for="tab1">Name:</label>
+        <input type="text" tabindex="1" id="tab1" placeholder="Pehle ye select ho"><br>
+        <label for="tab2">Email:</label>
+        <input type="email" tabindex="2" id="tab2" placeholder="Phir ye"><br>
+        <label for="tab3">Phone:</label>
+        <input type="tel" tabindex="3" id="tab3" placeholder="Phir ye"><br><br>
+        <button tabindex="4">Submit</button><hr>
+
+        <noscript>
+            <h1 style="color: red">JS OFF! Ye dikh raha hai?</h1>
+        </noscript>
+
+        <h2>18. Character Entities</h2>
+            <p>Copyright: &copy; | Trademark: &trade; | Registered: &reg; | Euro: &euro; | Pound: &pound; | Yen: &yen; | Heart: &hearts; | Less than: &lt; | Greater than: &gt; | Ampersand: &amp;</p> <hr> 
+
+        <h2>19. Embed Tag</h2>
+        <embed src="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" type="application/pdf">
+
+        <h2>20. Object Tag (with fallback)</h2>
+        <span>PDF support nahi hai.</span> <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" target="_blank">Yahan click karein.</a>
+
+        <footer>
+            <p>© 2026 Practice 4 - Pure HTML Mastery. All rights reserved.</p>
+            <address>
+                Written by <a href="#">Shahbaz Ali</a><br>
+                Faisalabad, Pakistan.
+            </address>
+        </footer>
+</body>
+</html>
