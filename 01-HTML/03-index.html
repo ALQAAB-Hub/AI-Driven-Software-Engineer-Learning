@@ -6,7 +6,7 @@
     <title>practice 003</title>
 </head>
 <body>
-    <form action="">
+    <form action="#" method="post">
         <h1>📝 Practice 3: Forms & Input Types</h1>
             <p>Is practice mein aap alag alag tarah ke input fields aur unke attributes ka istemal dekhenge.</p>
         
@@ -24,22 +24,22 @@
         <input type="number" id="age" name="age" value="22" min="18" max="60"><br><br>
         
         <label for="phone">Phone Number:</label><br>
-        <input type="number" id="phone" name="Phone" placeholder="0326-1182021"><br><br>
+        <input type="tel" id="phone" name="Phone" placeholder="0326-1182021"><br><br>
 
         <label for="dob">Date of Birth:</label><br>
         <input type="date" name="date"><br><br>
 
         <label for="website">Personal Website:</label><br>
-        <input type="text" id="website" name="website" placeholder="www.alqaab.com"><br><br>
+        <input type="url" id="website" name="website" placeholder="www.alqaab.com"><br><br>
 
         <label for="color">Favorite Color:</label>
         <input type="color" id="color" name="color" value="#000080"><br><br>
 
         <label for="experience">Experience (years):</label><br>
-        <input type="range" id="experience" name="experience" min="0" max="20" step="1" value="3">3 <br><br>
+        <input type="range" id="experience" name="experience" min="0" max="20" step="1" value="3">3 Years<br><br>
 
         <label for="upload">Upload Resume (PDF):</label><br>
-        <input type="file" id="upload"><br><br>
+        <input type="file" id="upload" name="resume"><br><br>
         
         <!-- Radio -->
          <span>Gender:</span><br>
@@ -66,17 +66,17 @@
         <br>
          <label for="country">Country:</label>
             <select name="country" id="country">
-                    <optgroup label="Main Country">
-                        <option value="pk">Pakistan</option>
-                        <option value="us">Unites States</option>
-                        <option value="iran">Iran</option>
-                        <!-- sub -->
-                        <optgroup label="Other Countrys">
-                            <option value="sa">Saudi Arabia</option>
-                            <option value="falasteen">Falasteen</option>
-                            <option value="uk">United Kingdom</option>
-                        </optgroup>
-                    </optgroup>
+            <optgroup label="Main Country">
+                <option value="pk">Pakistan</option>
+                <option value="us">Unites States</option>
+                <option value="iran">Iran</option>
+            </optgroup>
+                <!-- sub -->
+            <optgroup label="Other Countrys">
+                <option value="sa">Saudi Arabia</option>
+                <option value="falasteen">Falasteen</option>
+                <option value="uk">United Kingdom</option>
+            </optgroup>
             </select>
         <br><br>      
         <!-- text area and buttons -->
@@ -104,8 +104,7 @@
         <input type="month" id="expiry"><br><br>
 
         <label for="cvv">CVV:</label><br>
-        <input type="num" id="cvv" min="4" max="4" placeholder="1234"><br><br>
-
+        <input type="text" id="cvv" maxlength="3" pattern="[0-9]{3}" placeholder="123"><br><br>
         <button>Pay Now</button>
     </fieldset>
 
@@ -113,12 +112,12 @@
     <label for="datalist">Type Your City:</label>
         <input type="text" id="datalist" list="city">
             <datalist id="city">
-                <option value="Karachi"></option>
-                <option value="Lahore"></option>
-                <option value="Faisalabad"></option>
-                <option value="Islamabad"></option>
-                <option value="Rawalpindi"></option>
-                <option value="Multan"></option>
+            <option value="Karachi"></option>
+            <option value="Lahore"></option>
+            <option value="Faisalabad"></option>
+            <option value="Islamabad"></option>
+            <option value="Rawalpindi"></option>
+            <option value="Multan"></option>
             </datalist> <br><br>
         <span>Start typing to see suggestions.</span> <hr>
 
@@ -172,7 +171,6 @@
 
         <h2>7. Details & Summary</h2>
         <details>
-            <label for="details"></label>
             <summary id="details">Click to see more information</summary>
                 <br><span>Yeh chhupa hua content hai. Aap yahan koi bhi HTML daal sakte hain, jaise lists, tables, etc.</span>
                 <ul>
