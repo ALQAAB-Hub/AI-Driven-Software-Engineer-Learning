@@ -63,7 +63,7 @@
 
          <input type="checkbox" id="javascript" name="skills" value="javascript">
          <label for="javascript">JavaScript</label><br>
-
+        <br>
          <label for="country">Country:</label>
             <select name="country" id="country">
                     <optgroup label="Main Country">
@@ -71,13 +71,139 @@
                         <option value="us">Unites States</option>
                         <option value="iran">Iran</option>
                         <!-- sub -->
-                        <optgroup label="Other Countrys"></optgroup>
-                        <option value="sa">Saudi Arabia</option>
-                        <option value="falasteen">Falasteen</option>
-                        <option value="uk">United Kingdom</option>
+                        <optgroup label="Other Countrys">
+                            <option value="sa">Saudi Arabia</option>
+                            <option value="falasteen">Falasteen</option>
+                            <option value="uk">United Kingdom</option>
+                        </optgroup>
                     </optgroup>
             </select>
-    </form>
+        <br><br>      
+        <!-- text area and buttons -->
+         <label for="textarea">Short Bio:</label><br>
+         <textarea id="textarea" rows="4" cols="50" placeholder="Tell us about yourself"></textarea><br><br>
+         
+         <button>Register</button>
+         <button type="reset">Reset Form</button>
+    </form><hr>
+
+    <h2>2. Fieldset & Legend Example</h2>
+    <fieldset>
+        <legend>Payment Information</legend>
+        <label for="card">Card Type:</label><br>
+        <select id="card">
+            <option value="visa">Visa</option>
+            <option value="mastercard">MasterCard</option>
+            <option value="us-card">American Express</option>
+        </select><br><br>
+
+        <label for="card-no">Card Number:</label><br>
+        <input type="number" id="card-no" placeholder="123456789101112"><br><br>
+
+        <label for="expiry">Expiry Date:</label><br>
+        <input type="month" id="expiry"><br><br>
+
+        <label for="cvv">CVV:</label><br>
+        <input type="num" id="cvv" min="4" max="4" placeholder="1234"><br><br>
+
+        <button>Pay Now</button>
+    </fieldset>
+
+    <h2>3. Datalist for Suggestions</h2>
+    <label for="datalist">Type Your City:</label>
+        <input type="text" id="datalist" list="city">
+            <datalist id="city">
+                <option value="Karachi"></option>
+                <option value="Lahore"></option>
+                <option value="Faisalabad"></option>
+                <option value="Islamabad"></option>
+                <option value="Rawalpindi"></option>
+                <option value="Multan"></option>
+            </datalist> <br><br>
+        <span>Start typing to see suggestions.</span> <hr>
+
+        <h2>4. Progress Bar & Meter</h2>
+        <span>File upload progress:</span>
+        <progress value="45" max="100"></progress> 45% <br><br>
+
+        <span>Disk usage:</span>
+        <meter value="80" max="100"></meter> 80% used <hr>
+
+        <h2>5. Complex Table (colspan & rowspan)</h2>
+        <table border="1">
+            <caption>Student Marks Table</caption>
+            <tr>
+                <th rowspan="2">Student</th>
+                <th colspan="3">Subjects</th>
+                <th rowspan="2">Total</th>
+            </tr>
+            <tr>
+                <th>Math</th>
+                <th>Science</th>
+                <th>English</th>
+            </tr>
+            <tr>
+                <td>Ali</td>
+                <td>85</td>
+                <td>90</td>
+                <td>78</td>
+                <td>253</td>
+            </tr>
+
+            <tr>
+                <td>Sara</td>
+                <td>92</td>
+                <td>88</td>
+                <td>95</td>
+                <td>275</td>
+            </tr>
+            <tr>
+                <td>Ahmad</td>
+                <td>70</td>
+                <td>82</td>
+                <td>80</td>
+                <td>232</td>
+            </tr>
+        </table> <hr>
+
+        <h2>6. Embed YouTube Video (iframe)</h2>
+        <iframe controls width="580" height="320" src="https://www.youtube.com/embed/_J_IS2VqXlA?list=RD_J_IS2VqXlA" title="Beautiful Naat Status🌹|| Jummah Mubarak Beautiful Whatsapp Status🌙 || Emotional Dua😢" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> <br><br>
+        <span>Yeh ek sample YouTube video hai (embed).</span> <hr>
+
+        <h2>7. Details & Summary</h2>
+        <details>
+            <label for="details"></label>
+            <summary id="details">Click to see more information</summary>
+                <br><span>Yeh chhupa hua content hai. Aap yahan koi bhi HTML daal sakte hain, jaise lists, tables, etc.</span>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JS</li>
+                </ul>
+        </details> <hr>
+
+        <h2>8. Output Tag Example (Simple Calculator)</h2>
+        <form action="">
+            <label for="a">Number 1:</label>
+            <input type="number" id="a" value="10"><br>
+            <label for="b">Number 2:</label>
+            <input type="number" id="b" value="20"><br>
+            <output name="x" for="a b">Sum: 30</output>
+        </form>
+        
+        <h2>9. Address & Time</h2>
+        <address>
+            Written by <a href="mailto:alqaab.com+shahbaz@gmail.com">Shahbaz Ali</a> <br>
+            Visit us at: <a href="www.example.com" target="_blank">www.example.com</a> <br>
+            Faisalabad, Pakistan
+            <p>
+                <time datetime="2026-03-08">Published on 8 March 2026.</time>
+            </p>
+        </address> <hr>
+        
+        <footer>
+            © 2026 Practice 3 - HTML Mastery. All rights reserved.
+        </footer> <hr>
 
 </body>
 </html>
