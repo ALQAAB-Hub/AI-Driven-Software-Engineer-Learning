@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Practice 3 - Forms & Advanced Inputs</title>
+    <!-- Pure HTML, no CSS -->
+</head>
+<body>
+
+    <header>
+        <h1>📝 Practice 3: Forms & Input Types</h1>
+        <p>Is practice mein aap alag alag tarah ke input fields aur unke attributes ka istemal dekhenge.</p>
+    </header>
+
+    <main>
+
+        <!-- ========== SECTION 1: BASIC FORM WITH VARIOUS INPUTS ========== -->
+        <section>
+            <h2>1. Basic Registration Form</h2>
+            <form action="#" method="post">
+                <!-- Text input -->
+                <label for="fullname">Full Name:</label><br>
+                <input type="text" id="fullname" name="fullname" placeholder="e.g., Shahbaz Ali" maxlength="50" required><br><br>
+
+                <!-- Email input -->
+                <label for="email">Email Address:</label><br>
+                <input type="email" id="email" name="email" placeholder="example@mail.com" required><br><br>
+
+                <!-- Password input -->
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password" placeholder="Minimum 8 characters" minlength="8" required><br><br>
+
+                <!-- Number input -->
+                <label for="age">Age (18-60):</label><br>
+                <input type="number" id="age" name="age" min="18" max="60" step="1" value="25"><br><br>
+
+                <!-- Telephone input -->
+                <label for="phone">Phone Number:</label><br>
+                <input type="tel" id="phone" name="phone" placeholder="0300-1234567" pattern="[0-9]{4}-[0-9]{7}" title="Format: 0300-1234567"><br><br>
+
+                <!-- Date input -->
+                <label for="dob">Date of Birth:</label><br>
+                <input type="date" id="dob" name="dob" min="1950-01-01" max="2026-12-31"><br><br>
+
+                <!-- URL input -->
+                <label for="website">Personal Website (optional):</label><br>
+                <input type="url" id="website" name="website" placeholder="https://example.com"><br><br>
+
+                <!-- Color picker -->
+                <label for="favcolor">Favorite Color:</label><br>
+                <input type="color" id="favcolor" name="favcolor" value="#ff0000"><br><br>
+
+                <!-- Range slider -->
+                <label for="experience">Experience (years):</label><br>
+                <input type="range" id="experience" name="experience" min="0" max="20" step="1" value="3"> <output for="experience" id="expValue">3</output> years<br><br>
+
+                <!-- File upload -->
+                <label for="resume">Upload Resume (PDF):</label><br>
+                <input type="file" id="resume" name="resume" accept=".pdf"><br><br>
+
+                <!-- Hidden input (user ko nahi dikhega) -->
+                <input type="hidden" name="user_id" value="12345">
+
+                <!-- Radio buttons -->
+                <label>Gender:</label><br>
+                <input type="radio" id="male" name="gender" value="male" checked>
+                <label for="male">Male</label><br>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label><br>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label><br><br>
+
+                <!-- Checkboxes -->
+                <label>Skills:</label><br>
+                <input type="checkbox" id="html" name="skills" value="html" checked>
+                <label for="html">HTML</label><br>
+                <input type="checkbox" id="css" name="skills" value="css">
+                <label for="css">CSS</label><br>
+                <input type="checkbox" id="js" name="skills" value="js">
+                <label for="js">JavaScript</label><br><br>
+
+                <!-- Dropdown with optgroup -->
+                <label for="country">Country:</label><br>
+                <select id="country" name="country">
+                    <optgroup label="South Asia">
+                        <option value="pk" selected>Pakistan</option>
+                        <option value="in">India</option>
+                        <option value="bd">Bangladesh</option>
+                    </optgroup>
+                    <optgroup label="Middle East">
+                        <option value="ae">UAE</option>
+                        <option value="sa">Saudi Arabia</option>
+                    </optgroup>
+                </select><br><br>
+
+                <!-- Textarea -->
+                <label for="bio">Short Bio:</label><br>
+                <textarea id="bio" name="bio" rows="4" cols="50" placeholder="Tell us about yourself..." maxlength="200"></textarea><br><br>
+
+                <!-- Buttons -->
+                <button type="submit">Register</button>
+                <button type="reset">Reset Form</button>
+            </form>
+        </section>
+
+        <hr>
+
+        <!-- ========== SECTION 2: FIELDSET AND LEGEND ========== -->
+        <section>
+            <h2>2. Fieldset & Legend Example</h2>
+            <form action="#">
+                <fieldset>
+                    <legend>Payment Information</legend>
+
+                    <label for="cardtype">Card Type:</label><br>
+                    <select id="cardtype" name="cardtype">
+                        <option value="visa">Visa</option>
+                        <option value="master">MasterCard</option>
+                        <option value="amex">American Express</option>
+                    </select><br><br>
+
+                    <label for="cardno">Card Number:</label><br>
+                    <input type="text" id="cardno" name="cardno" placeholder="1234-5678-9012-3456" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}" title="Format: 1234-5678-9012-3456"><br><br>
+
+                    <label for="expiry">Expiry Date:</label><br>
+                    <input type="month" id="expiry" name="expiry"><br><br>
+
+                    <label for="cvv">CVV:</label><br>
+                    <input type="text" id="cvv" name="cvv" placeholder="123" maxlength="3" pattern="[0-9]{3}" title="3-digit code"><br><br>
+
+                    <input type="submit" value="Pay Now">
+                </fieldset>
+            </form>
+        </section>
+
+        <hr>
+
+        <!-- ========== SECTION 3: DATALIST WITH SUGGESTIONS ========== -->
+        <section>
+            <h2>3. Datalist for Suggestions</h2>
+            <label for="city">Type your city:</label>
+            <input type="text" id="city" name="city" list="cities">
+            <datalist id="cities">
+                <option value="Karachi">
+                <option value="Lahore">
+                <option value="Islamabad">
+                <option value="Faisalabad">
+                <option value="Rawalpindi">
+                <option value="Multan">
+            </datalist>
+            <p><small>Start typing to see suggestions.</small></p>
+        </section>
+
+        <hr>
+
+        <!-- ========== SECTION 4: PROGRESS AND METER ========== -->
+        <section>
+            <h2>4. Progress Bar & Meter</h2>
+            <p>File upload progress: <progress value="45" max="100">45%</progress> 45%</p>
+            <p>Disk usage: <meter value="0.8" min="0" max="1">80%</meter> 80% used</p>
+        </section>
+
+        <hr>
+
+        <!-- ========== SECTION 5: TABLE WITH COLSPAN/ROWSPAN ========== -->
+        <section>
+            <h2>5. Complex Table (colspan & rowspan)</h2>
+            <table border="1" cellpadding="8">
+                <caption>Student Marks Table</caption>
+                <thead>
+                    <tr>
+                        <th rowspan="2">Student</th>
+                        <th colspan="3">Subjects</th>
+                        <th rowspan="2">Total</th>
+                    </tr>
+                    <tr>
+                        <th>Math</th>
+                        <th>Science</th>
+                        <th>English</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ali</td>
+                        <td>85</td>
+                        <td>90</td>
+                        <td>78</td>
+                        <td>253</td>
+                    </tr>
+                    <tr>
+                        <td>Sara</td>
+                        <td>92</td>
+                        <td>88</td>
+                        <td>95</td>
+                        <td>275</td>
+                    </tr>
+                    <tr>
+                        <td>Ahmed</td>
+                        <td>70</td>
+                        <td>82</td>
+                        <td>80</td>
+                        <td>232</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <hr>
+
+        <!-- ========== SECTION 6: IFRAME (EMBED YOUTUBE) ========== -->
+        <section>
+            <h2>6. Embed YouTube Video (iframe)</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video" frameborder="0" allowfullscreen></iframe>
+            <p><small>Yeh ek sample YouTube video hai (embed).</small></p>
+        </section>
+
+        <hr>
+
+        <!-- ========== SECTION 7: DETAILS / SUMMARY ========== -->
+        <section>
+            <h2>7. Details & Summary</h2>
+            <details>
+                <summary>Click to see more information</summary>
+                <p>Yeh chhupa hua content hai. Aap yahan koi bhi HTML daal sakte hain, jaise lists, tables, etc.</p>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+            </details>
+        </section>
+
+        <hr>
+
+        <!-- ========== SECTION 8: OUTPUT TAG FOR CALCULATION ========== -->
+        <section>
+            <h2>8. Output Tag Example (Simple Calculator)</h2>
+            <form oninput="result.value = parseInt(num1.value) + parseInt(num2.value)">
+                <label for="num1">Number 1:</label>
+                <input type="number" id="num1" name="num1" value="10"><br>
+                <label for="num2">Number 2:</label>
+                <input type="number" id="num2" name="num2" value="20"><br>
+                <label>Sum:</label>
+                <output name="result" for="num1 num2">30</output>
+            </form>
+        </section>
+
+        <hr>
+
+        <!-- ========== SECTION 9: ADDRESS AND TIME ========== -->
+        <section>
+            <h2>9. Address & Time</h2>
+            <address>
+                Written by <a href="mailto:shahbaz@example.com">Shahbaz Ali</a><br>
+                Visit us at: <a href="#">www.example.com</a><br>
+                Faisalabad, Pakistan
+            </address>
+            <p>Published on <time datetime="2026-03-08">8 March 2026</time>.</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Practice 3 - HTML Mastery. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript ka ek chhota snippet (optional) jo range ke saath output update karta hai -->
+    <script>
+        // Range slider ke value ko output mein dikhane ke liye
+        const range = document.getElementById('experience');
+        const output = document.getElementById('expValue');
+        if (range && output) {
+            range.addEventListener('input', function() {
+                output.textContent = this.value;
+            });
+        }
+    </script>
+</body>
+</html>

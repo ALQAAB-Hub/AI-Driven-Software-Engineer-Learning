@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sirf HTML Practice</title>
+    <!-- Note: Isme koi CSS nahi hai, sirf HTML tags -->
+</head>
+<body>
+
+    <!-- Yeh Heading hai -->
+    <h1>Main Heading (H1)</h1>
+    <h2>Yeh Heading 2 hai</h2>
+    <h3>Yeh Heading 3 hai</h3>
+    <h4>Yeh Heading 4 hai</h4>
+    <h5>Yeh Heading 5 hai</h5>
+    <h6>Yeh Heading 6 hai</h6>
+
+    <!-- Yeh Paragraph hai -->
+    <p>Yeh ek simple paragraph hai. Isme aap kuch bhi likh sakte hain. Jaise ke "HTML seekhna bohat aasan hai".</p>
+
+    <!-- Yeh line break hai -->
+    <p>Yeh line <br> break ke saath hai.</p>
+
+    <!-- Horizontal Rule -->
+    <hr>
+
+    <!-- Formatting Tags -->
+    <p><b>Bold text</b> aur <strong>Strong text</strong> same hotay hain.</p>
+    <p><i>Italic text</i> aur <em>Emphasized text</em> same hotay hain.</p>
+    <p><u>Underlined text</u> aur <mark>Marked text</mark> bhi dekh sakte hain.</p>
+    <p><small>Small text</small> aur <del>Deleted text</del> aur <ins>Inserted text</ins>.</p>
+    <p>Yeh <sub>subscript</sub> aur <sup>superscript</sup> ka example hai.</p>
+
+    <hr>
+
+    <!-- Ordered List (numbered) -->
+    <h3>Ordered List</h3>
+    <ol>
+        <li>Pehla item</li>
+        <li>Dusra item</li>
+        <li>Teesra item</li>
+        <li>Choutha item</li>
+    </ol>
+
+    <!-- Unordered List (bullets) -->
+    <h3>Unordered List</h3>
+    <ul>
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Mango</li>
+        <li>Orange</li>
+    </ul>
+
+    <!-- Nested List -->
+    <h3>Nested List (list ke andar list)</h3>
+    <ul>
+        <li>Fruits
+            <ul>
+                <li>Apple</li>
+                <li>Banana</li>
+            </ul>
+        </li>
+        <li>Vegetables
+            <ul>
+                <li>Carrot</li>
+                <li>Potato</li>
+            </ul>
+        </li>
+    </ul>
+
+    <hr>
+
+    <!-- Links -->
+    <h3>Links (Anchor Tags)</h3>
+    <p><a href="https://www.google.com">Yeh Google ka link hai (naye tab mein khulega nahi)</a></p>
+    <p><a href="https://www.google.com" target="_blank">Yeh Google ka link hai jo naye tab mein khulega</a></p>
+
+    <hr>
+
+    <!-- Images -->
+    <h3>Image</h3>
+    <p>Neeche ek image hai (online image):</p>
+    <img src="https://picsum.photos/300/200" alt="Random image" width="300" height="200">
+    <p>Agar image nahi mili to "alt" text dikhega: "Random image"</p>
+
+    <hr>
+
+    <!-- Table -->
+    <h3>Simple Table</h3>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>City</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ali</td>
+                <td>25</td>
+                <td>Karachi</td>
+            </tr>
+            <tr>
+                <td>Sara</td>
+                <td>22</td>
+                <td>Lahore</td>
+            </tr>
+            <tr>
+                <td>Ahmed</td>
+                <td>30</td>
+                <td>Islamabad</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+
+    <!-- Form (bina CSS ke) -->
+    <h3>Simple Form</h3>
+    <form>
+        <!-- Text input -->
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br><br>
+
+        <!-- Email input -->
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+
+        <!-- Password -->
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password"><br><br>
+
+        <!-- Radio buttons -->
+        <label>Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br><br>
+
+        <!-- Checkbox -->
+        <input type="checkbox" id="subscribe" name="subscribe">
+        <label for="subscribe">Subscribe to newsletter</label><br><br>
+
+        <!-- Dropdown (select) -->
+        <label for="city">Choose city:</label><br>
+        <select id="city" name="city">
+            <option value="karachi">Karachi</option>
+            <option value="lahore">Lahore</option>
+            <option value="islamabad">Islamabad</option>
+        </select><br><br>
+
+        <!-- Textarea -->
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="40"></textarea><br><br>
+
+        <!-- Submit button -->
+        <input type="submit" value="Submit Form">
+    </form>
+
+    <hr>
+
+    <!-- Div and Span (block vs inline) -->
+    <h3>Div aur Span</h3>
+    <div style="border:1px solid black; padding:10px;">
+        Yeh ek <span style="color:red;">div</span> hai jo block-level element hai. Iske andar <span style="background-color:yellow;">span</span> hai jo inline hai.
+    </div>
+
+    <hr>
+
+    <!-- Footer -->
+    <h3>Footer</h3>
+    <footer>
+        <p>Yeh footer hai &copy; 2025</p>
+    </footer>
+
+</body>
+</html>

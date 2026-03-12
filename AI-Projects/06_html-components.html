@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Components 11-20</title>
+</head>
+<body>
+
+    <!-- 11. SEARCH BAR COMPONENT -->
+    <section>
+        <h2>11. 🔍 Search Bar</h2>
+        <form action="#" method="get">
+            <label for="search">Search website:</label>
+            <input type="search" id="search" name="q" placeholder="Type something..." required>
+            <button type="submit">Go</button>
+        </form>
+        <p><small>Popular searches: <a href="#">HTML</a> | <a href="#">CSS</a> | <a href="#">JavaScript</a></small></p>
+    </section>
+    <hr>
+
+    <!-- 12. LOGIN FORM -->
+    <section>
+        <h2>12. 🔐 Login Form</h2>
+        <form action="#" method="post">
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username" placeholder="Enter username" required><br>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" placeholder="••••••••" minlength="6" required><br>
+            <input type="checkbox" id="remember" name="remember">
+            <label for="remember">Remember me</label><br><br>
+            <button type="submit">Login</button>
+            <a href="#">Forgot password?</a>
+        </form>
+    </section>
+    <hr>
+
+    <!-- 13. COMMENT SECTION -->
+    <section>
+        <h2>13. 💬 Comments (3)</h2>
+        <article>
+            <header>
+                <strong>Ali Raza</strong> - <time datetime="2026-03-10">2 days ago</time>
+            </header>
+            <p>Great article! Very helpful for beginners.</p>
+        </article>
+        <article>
+            <header>
+                <strong>Sara Khan</strong> - <time datetime="2026-03-11">1 day ago</time>
+            </header>
+            <p>Can you make more tutorials like this?</p>
+        </article>
+        <article>
+            <header>
+                <strong>Ahmed</strong> - <time datetime="2026-03-12">5 hours ago</time>
+            </header>
+            <p>Thanks for sharing!</p>
+        </article>
+        
+        <h3>Leave a comment:</h3>
+        <form action="#" method="post">
+            <label for="comment-name">Name:</label><br>
+            <input type="text" id="comment-name" name="name" required><br>
+            <label for="comment-text">Comment:</label><br>
+            <textarea id="comment-text" name="comment" rows="4" cols="40" required></textarea><br>
+            <button type="submit">Post Comment</button>
+        </form>
+    </section>
+    <hr>
+
+    <!-- 14. NAVIGATION MENU (DROPDOWN) -->
+    <section>
+        <h2>14. 📋 Navigation Menu with Dropdown</h2>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li>
+                    <a href="#">Services</a>
+                    <ul>
+                        <li><a href="#">Web Design</a></li>
+                        <li><a href="#">SEO</a></li>
+                        <li><a href="#">Content Writing</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <p><small>Note: Dropdown hover effect ke liye CSS chahiye, lekin structure HTML mein dikh raha hai.</small></p>
+    </section>
+    <hr>
+
+    <!-- 15. PRICE COMPARISON TABLE -->
+    <section>
+        <h2>15. 💲 Price Comparison</h2>
+        <table border="1" cellpadding="8">
+            <caption>Mobile Plans</caption>
+            <thead>
+                <tr>
+                    <th>Plan</th>
+                    <th>Data</th>
+                    <th>Minutes</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Basic</strong></td>
+                    <td>5 GB</td>
+                    <td>500</td>
+                    <td>$15</td>
+                </tr>
+                <tr>
+                    <td><strong>Standard</strong></td>
+                    <td>20 GB</td>
+                    <td>1000</td>
+                    <td>$25</td>
+                </tr>
+                <tr>
+                    <td><strong>Premium</strong></td>
+                    <td>50 GB</td>
+                    <td>Unlimited</td>
+                    <td>$40</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <hr>
+
+    <!-- 16. REGISTRATION FORM (COMPLETE) -->
+    <section>
+        <h2>16. 📝 Registration Form</h2>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="reg-fname">First Name:</label>
+                <input type="text" id="reg-fname" name="fname" required><br>
+                <label for="reg-lname">Last Name:</label>
+                <input type="text" id="reg-lname" name="lname" required><br>
+                <label for="reg-email">Email:</label>
+                <input type="email" id="reg-email" name="email" required><br>
+                <label for="reg-phone">Phone:</label>
+                <input type="tel" id="reg-phone" name="phone" pattern="[0-9]{11}" placeholder="03001234567"><br>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Account Details</legend>
+                <label for="reg-user">Username:</label>
+                <input type="text" id="reg-user" name="username" minlength="4" required><br>
+                <label for="reg-pass">Password:</label>
+                <input type="password" id="reg-pass" name="password" minlength="6" required><br>
+                <label for="reg-confirm">Confirm Password:</label>
+                <input type="password" id="reg-confirm" name="confirm_pass" required><br>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Preferences</legend>
+                <input type="checkbox" id="newsletter" name="newsletter" checked>
+                <label for="newsletter">Subscribe to newsletter</label><br>
+                <label for="country">Country:</label>
+                <select id="country" name="country">
+                    <option value="pk">Pakistan</option>
+                    <option value="in">India</option>
+                    <option value="bd">Bangladesh</option>
+                    <option value="uk">United Kingdom</option>
+                </select>
+            </fieldset>
+            
+            <br>
+            <button type="submit">Register</button>
+            <button type="reset">Reset</button>
+        </form>
+    </section>
+    <hr>
+
+    <!-- 17. IMAGE GALLERY (SIMPLE) -->
+    <section>
+        <h2>17. 🖼️ Image Gallery</h2>
+        <figure>
+            <img src="https://picsum.photos/150/150?random=10" alt="Gallery image 1" width="150" height="150">
+            <figcaption>Mountain</figcaption>
+        </figure>
+        <figure>
+            <img src="https://picsum.photos/150/150?random=11" alt="Gallery image 2" width="150" height="150">
+            <figcaption>Ocean</figcaption>
+        </figure>
+        <figure>
+            <img src="https://picsum.photos/150/150?random=12" alt="Gallery image 3" width="150" height="150">
+            <figcaption>Forest</figcaption>
+        </figure>
+        <figure>
+            <img src="https://picsum.photos/150/150?random=13" alt="Gallery image 4" width="150" height="150">
+            <figcaption>City</figcaption>
+        </figure>
+    </section>
+    <hr>
+
+    <!-- 18. WEATHER WIDGET (DUMMY) -->
+    <section>
+        <h2>18. ☀️ Weather Widget</h2>
+        <p><strong>Faisalabad, Pakistan</strong></p>
+        <p>🌡️ <meter value="32" min="0" max="50">32°C</meter> 32°C</p>
+        <p>💧 Humidity: 65% <progress value="65" max="100"></progress></p>
+        <p>🌬️ Wind: 12 km/h</p>
+        <p>📅 <time datetime="2026-03-12">March 12, 2026</time></p>
+    </section>
+    <hr>
+
+    <!-- 19. POLL / SURVEY QUESTION -->
+    <section>
+        <h2>19. 📊 Quick Poll</h2>
+        <p><strong>What is your favorite programming language?</strong></p>
+        <form action="#" method="post">
+            <input type="radio" id="poll-html" name="poll" value="html">
+            <label for="poll-html">HTML</label><br>
+            <input type="radio" id="poll-css" name="poll" value="css">
+            <label for="poll-css">CSS</label><br>
+            <input type="radio" id="poll-js" name="poll" value="js">
+            <label for="poll-js">JavaScript</label><br>
+            <input type="radio" id="poll-python" name="poll" value="python">
+            <label for="poll-python">Python</label><br><br>
+            <button type="submit">Vote</button>
+        </form>
+        <p><small>Current results: HTML (45%), CSS (30%), JS (20%), Python (5%)</small></p>
+    </section>
+    <hr>
+
+    <!-- 20. BREADCRUMB NAVIGATION -->
+    <section>
+        <h2>20. 🍞 Breadcrumb Navigation</h2>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a> ></li>
+                <li><a href="#">Products</a> ></li>
+                <li><a href="#">Electronics</a> ></li>
+                <li>Smartphones</li>
+            </ul>
+        </nav>
+        <p>You are here: Home > Products > Electronics > Smartphones</p>
+        <hr>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 HTML Components 11-20 | Pure HTML Examples</p>
+        <address>
+            <a href="mailto:shahbaz@example.com">Contact Developer</a>
+        </address>
+    </footer>
+
+</body>
+</html>

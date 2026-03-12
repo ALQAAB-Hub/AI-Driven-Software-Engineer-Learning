@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pure HTML Practice - Level 4">
+    <meta name="keywords" content="HTML, practice, pure HTML">
+    <meta name="author" content="Shahbaz Ali">
+    <title>Practice 4 - Pure HTML</title>
+    <!-- No CSS, No JavaScript - Sirf Pure HTML -->
+</head>
+<body>
+
+    <!-- ========== HEADER ========== -->
+    <header>
+        <h1>📘 Practice 4: Advanced Pure HTML</h1>
+        <p>Is practice mein aap kuch naye HTML tags aur attributes seekhenge jo pehle practice mein nahi aaye.</p>
+        <hr>
+    </header>
+
+    <!-- ========== MAIN CONTENT ========== -->
+    <main>
+
+        <!-- ========== 1. PICTURE ELEMENT (Responsive Images) ========== -->
+        <section>
+            <h2>1. Picture Element (Responsive Images)</h2>
+            <p>Yeh element different screen sizes ke liye different images dikhata hai.</p>
+            <picture>
+                <source media="(min-width: 800px)" srcset="https://picsum.photos/800/400?random=1">
+                <source media="(min-width: 500px)" srcset="https://picsum.photos/500/300?random=2">
+                <img src="https://picsum.photos/300/200?random=3" alt="Random image" style="width:auto;">
+            </picture>
+            <p><small>Browser ki width kam/karo to image change hoti dikhegi.</small></p>
+            <hr>
+        </section>
+
+        <!-- ========== 2. SVG (Inline SVG Graphics) ========== -->
+        <section>
+            <h2>2. Inline SVG (Graphics without CSS/JS)</h2>
+            <svg width="200" height="200">
+                <circle cx="100" cy="100" r="50" stroke="black" stroke-width="3" fill="lightblue" />
+                <rect x="50" y="50" width="100" height="100" stroke="red" stroke-width="2" fill="yellow" opacity="0.5" />
+                <line x1="0" y1="0" x2="200" y2="200" stroke="green" stroke-width="4" />
+                <text x="20" y="180" fill="purple">SVG Text</text>
+            </svg>
+            <p><small>Yeh shapes pure HTML mein draw ki gayi hain (SVG).</small></p>
+            <hr>
+        </section>
+
+        <!-- ========== 3. DEFINITION LIST (dl, dt, dd) ========== -->
+        <section>
+            <h2>3. Definition List (dl, dt, dd)</h2>
+            <dl>
+                <dt>HTML</dt>
+                <dd>HyperText Markup Language – website ka skeleton.</dd>
+                
+                <dt>CSS</dt>
+                <dd>Cascading Style Sheets – website ki styling.</dd>
+                
+                <dt>JS</dt>
+                <dd>JavaScript – website ki functionality.</dd>
+            </dl>
+            <hr>
+        </section>
+
+        <!-- ========== 4. BDO (Bi-Directional Override) ========== -->
+        <section>
+            <h2>4. BDO (Bi-Directional Override)</h2>
+            <p>Normal text: یہ اردو ہے۔</p>
+            <p><bdo dir="rtl">یہ اردو ہے۔</bdo> (RTL override)</p>
+            <p><bdo dir="ltr">یہ اردو ہے۔</bdo> (LTR override)</p>
+            <p><small>BDO text direction forcefully change karta hai.</small></p>
+            <hr>
+        </section>
+
+        <!-- ========== 5. KBD (Keyboard Input) ========== -->
+        <section>
+            <h2>5. KBD (Keyboard Input Tag)</h2>
+            <p>Copy karne ke liye dabayein: <kbd>Ctrl</kbd> + <kbd>C</kbd></p>
+            <p>Save karne ke liye: <kbd>Ctrl</kbd> + <kbd>S</kbd></p>
+            <hr>
+        </section>
+
+        <!-- ========== 6. SAMP (Sample Output) ========== -->
+        <section>
+            <h2>6. SAMP (Sample Output)</h2>
+            <p>Computer ka response: <samp>Error 404: File not found</samp></p>
+            <hr>
+        </section>
+
+        <!-- ========== 7. VAR (Variable) ========== -->
+        <section>
+            <h2>7. VAR (Variable Tag)</h2>
+            <p>Equation: <var>x</var> + <var>y</var> = <var>z</var></p>
+            <hr>
+        </section>
+
+        <!-- ========== 8. DFN (Definition) ========== -->
+        <section>
+            <h2>8. DFN (Definition Tag)</h2>
+            <p><dfn title="HyperText Markup Language">HTML</dfn> website ka skeleton hai.</p>
+            <p><dfn>CSS</dfn> styling ke liye use hota hai.</p>
+            <hr>
+        </section>
+
+        <!-- ========== 9. WBR (Word Break Opportunity) ========== -->
+        <section>
+            <h2>9. WBR (Word Break Opportunity)</h2>
+            <p>Bohot lamba word jo break ho sakta hai: Super<wbr>Cali<wbr>Fragil<wbr>istic<wbr>Expiali<wbr>Docious</p>
+            <p><small>Browser ko batata hai ke agar zaroorat ho to yahan break kar sakta hai.</small></p>
+            <hr>
+        </section>
+
+        <!-- ========== 10. CONTENTEDITABLE ATTRIBUTE ========== -->
+        <section>
+            <h2>10. Contenteditable Attribute</h2>
+            <p contenteditable="true">Yeh paragraph editable hai. Aap isme likh sakte hain!</p>
+            <p><small>Is text par click karo aur likhna shuru karo (bina JS ke).</small></p>
+            <hr>
+        </section>
+
+        <!-- ========== 11. SPELLCHECK ATTRIBUTE ========== -->
+        <section>
+            <h2>11. Spellcheck Attribute</h2>
+            <p spellcheck="true">Yeh paragraph spell check ke saath: Teh quik brown fox jump over teh lazy dog.</p>
+            <p spellcheck="false">Yeh bina spell check ke: Teh quik brown fox jump over teh lazy dog.</p>
+            <p><small>Misspelled words underline honge (browser support par depend).</small></p>
+            <hr>
+        </section>
+
+        <!-- ========== 12. DIR ATTRIBUTE (Text Direction) ========== -->
+        <section>
+            <h2>12. DIR Attribute (Text Direction)</h2>
+            <p dir="ltr">This is left-to-right text.</p>
+            <p dir="rtl">یہ دائیں سے بائیں تحریر ہے۔</p>
+            <hr>
+        </section>
+
+        <!-- ========== 13. ACCESSKEY & TABINDEX (Keyboard Navigation) ========== -->
+        <section>
+            <h2>13. Accesskey & Tabindex</h2>
+            <p>Accesskey: <a href="#" accesskey="h">Home (Alt + H)</a> | <a href="#" accesskey="c">Contact (Alt + C)</a></p>
+            <p>Tabindex ke saath input fields:</p>
+            <label>Name: <input type="text" tabindex="1"></label><br>
+            <label>Email: <input type="email" tabindex="2"></label><br>
+            <label>Phone: <input type="tel" tabindex="3"></label><br>
+            <p><small>Tab button dabakar fields navigate karo.</small></p>
+            <hr>
+        </section>
+
+        <!-- ========== 14. NOSCRIPT TAG ========== -->
+        <section>
+            <h2>14. Noscript Tag</h2>
+            <noscript>
+                <p style="color:red;">Aapka browser JavaScript support nahi karta ya disabled hai.</p>
+            </noscript>
+            <p>Agar JS on hai to ye message nahi dikhega.</p>
+            <hr>
+        </section>
+
+        <!-- ========== 15. BASE TAG (Base URL) ========== -->
+        <!-- NOTE: Base tag head mein hota hai, yahan example ke liye comment kar diya -->
+        <!-- <base href="https://example.com/" target="_blank"> -->
+        <section>
+            <h2>15. Base Tag (Comment mein hai)</h2>
+            <p><code>&lt;base&gt;</code> tag head mein likha jata hai. Yeh saare relative links ke liye base URL set karta hai.</p>
+            <hr>
+        </section>
+
+        <!-- ========== 16. META TAGS (Already head mein hain) ========== -->
+        <section>
+            <h2>16. Meta Tags</h2>
+            <p>Head mein <code>&lt;meta&gt;</code> tags hain: description, keywords, author, charset, viewport.</p>
+            <hr>
+        </section>
+
+        <!-- ========== 17. LINK TAG (Favicon) ========== -->
+        <section>
+            <h2>17. Link Tag (Favicon)</h2>
+            <p>Head mein favicon link hota hai. Yahan example ke liye:</p>
+            <p><code>&lt;link rel="icon" href="favicon.ico" type="image/x-icon"&gt;</code></p>
+            <hr>
+        </section>
+
+        <!-- ========== 18. CHARACTER ENTITIES ========== -->
+        <section>
+            <h2>18. Character Entities</h2>
+            <p>Copyright: &copy; | Trademark: &trade; | Registered: &reg; | Euro: &euro; | Pound: &pound; | Yen: &yen; | Heart: &hearts; | Less than: &lt; | Greater than: &gt; | Ampersand: &amp;</p>
+            <hr>
+        </section>
+
+        <!-- ========== 19. EMBED TAG (External Content) ========== -->
+        <section>
+            <h2>19. Embed Tag</h2>
+            <embed src="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" type="application/pdf" width="300" height="200">
+            <p><small>PDF embed kiya gaya hai (agar browser support kare).</small></p>
+            <hr>
+        </section>
+
+        <!-- ========== 20. OBJECT TAG (Fallback Content) ========== -->
+        <section>
+            <h2>20. Object Tag (with fallback)</h2>
+            <object data="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" type="application/pdf" width="300" height="200">
+                <p>PDF support nahi hai. <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" target="_blank">Yahan click karein</a>.</p>
+            </object>
+            <hr>
+        </section>
+
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer>
+        <p>&copy; 2026 Practice 4 - Pure HTML Mastery. All rights reserved.</p>
+        <address>
+            Written by <a href="mailto:shahbaz@example.com">Shahbaz Ali</a><br>
+            Faisalabad, Pakistan.
+        </address>
+    </footer>
+
+</body>
+</html>
